@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/*
+ * Ejerc1_Evalaucion_S2_M4
+ * By: Elio Duran.
+ * Prof. Felipe Cuevas.
+ * Fecha: 20/09/2022
+ */
 public class Clima {
     @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
@@ -17,7 +23,7 @@ public class Clima {
         } else if (temperatura > 20 && temperatura < 30) {
             System.out.println("Hay " + temperatura + " grados. El tipo de clima es Caluroso");
         } else {
-            System.out.println("Hay " + temperatura + " grados. El tipo de clima es tropical");
+            System.out.println("Hay " + temperatura + " grados. El tipo de clima es Tropical");
         }
     }
 }
