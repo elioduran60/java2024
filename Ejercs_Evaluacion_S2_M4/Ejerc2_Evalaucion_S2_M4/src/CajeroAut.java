@@ -33,11 +33,11 @@ public class CajeroAut {
                     System.out.println("Su Saldo inical es: " + saldo);
                     System.out.println("Ingrese la Cantidad que desea Retirar: ");
                     ret = leer.nextFloat();
-                    saldo = saldo - ret;
-                    if (saldo < 0) {
+                    if (saldo < ret) {
                         System.out.println(" -> ** No tiene suficiente saldo en la Cuenta.");
                     } else
-                        System.out.println("Su saldo actual es: " + saldo);
+                        saldo = saldo - ret;
+                    System.out.println("Su saldo actual es: " + saldo);
                     break;
                 }
                 case 3 -> {
