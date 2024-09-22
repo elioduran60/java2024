@@ -22,7 +22,6 @@ public class App {
         int num;
         int n = 0;
         int m = 0;
-
         do {
             System.out.println("Ingrese un numero entre 1 y 100: ");
             num = leer.nextInt();
