@@ -4,13 +4,13 @@
  * Prof. Felipe Cuevas.
  * Fecha: 21/09/2022
  */
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
         /*
          * Ejercicio Comprpbacion S4_M4
          * En esta actividad usted deberá crear dos arreglos unidimensionales. En uno
-         * almacenará el nombre
-         * de 5 asignaturas y en el segundo el promedio de nota por cada asignatura.
+         * almacenará el nombre de 5 asignaturas y en el segundo el promedio de nota
+         * por cada asignatura.
          * Finalmente, deberá sacar el promedio final y mostrar el promedio obtenido.
          * El promedio por curso corresponderá al que se almacene en el indicé de su
          * nombre
