@@ -25,7 +25,7 @@ public class Cybertron {
             System.out.println("6) Presentar todos los decepticons separados.");
             System.out.println("7) Salir.");
             System.out.println("-------------------------------------------");
-            System.out.println("Digite su opción: ");
+            System.out.println("Digite su opciï¿½n: ");
             op = leer.nextInt();
             leer.nextLine();
             switch (op) {
@@ -39,11 +39,11 @@ public class Cybertron {
                     break;
                 case 3:
                     System.out.println("----- Listado de Autobots Prime");
-                    for(AutobotPrime aux : ap){
+                    for (AutobotPrime aux : ap) {
                         aux.presentacion();
                     }
                     System.out.println("----- Listado de Autobots Regulares");
-                    for(AutobotRegular aux : ar){
+                    for (AutobotRegular aux : ar) {
                         aux.presentacion();
                     }
                     break;
@@ -57,16 +57,16 @@ public class Cybertron {
                     break;
                 case 6:
                     System.out.println("----- Listado de Decepticons Prime");
-                    for(DecepticonPrime aux : dp){
+                    for (DecepticonPrime aux : dp) {
                         aux.presentacion();
                     }
                     System.out.println("----- Listado de Decepticons Regulares");
-                    for(DecepticonRegular aux : dr){
+                    for (DecepticonRegular aux : dr) {
                         aux.presentacion();
                     }
                     break;
                 case 7:
-                    System.out.println("Saliendo del menú.");
+                    System.out.println("Saliendo del menï¿½.");
                     break;
             }
         } while (op != 7);
