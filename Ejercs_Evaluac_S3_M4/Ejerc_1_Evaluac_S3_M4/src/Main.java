@@ -1,13 +1,13 @@
 
 /*
- * Ejerc1_Evalaucion_S3_M4
+ * Ejerc1_Evaluacion_S3_M4
  * By: Elio Duran.
  * Prof. Felipe Cuevas.
  * Fecha: 22/09/2022
  */
 import java.util.Scanner;
 
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
         /*
          * Ejercs_Comprob_S3_M4:
@@ -25,7 +25,7 @@ public class App {
         do {
             System.out.println("Ingrese un numero entre 1 y 100: ");
             num = leer.nextInt();
-            if (num >= 1 && num <= 100) {
+            if (num >= 1 && num <= 100) { // Mostrar los números pares e impares que se encuentren
                 for (int i = 1; i <= num; i++) {
                     if (i % 2 == 0) {
                         n++;
