@@ -12,12 +12,10 @@ public class Main {
         /*
          * Ejercicio:
          * Crear una aplicación para mostrar distintos productos. Supondremos que la
-         * aplicación
-         * será usada por un vendedor y él deberá poder ingresar un máximo de 7
-         * nuevos productos,
-         * cambiar los datos del producto, por ejemplo, si varía de precio y
-         * ver la lista de productos. La aplicación no deja de funcionar hasta que el
-         * vendedor así lo decide.
+         * aplicación será usada por un vendedor y él deberá poder ingresar un
+         * máximode 7 nuevos productos, cambiar los datos del producto, por ejemplo,
+         * si varía de precio y ver la lista de productos.
+         * La aplicación no deja de funcionar hasta que el vendedor así lo decide.
          * Los productos deberán tener nombre, valor y descripción. La lista inicial
          * de productos es la siguiente:
          * |NOMBRE | VALOR | DESCRIPCIÓN |
@@ -60,9 +58,11 @@ public class Main {
             System.out.println(" ");
             op = leer.nextInt();
             leer.nextLine();
+
             switch (op) {
 
-                case 1 -> {// Impresion de Productos:
+                case 1 -> {
+                    // Impresion de Productos:
                     for (String[] producto : productos) {
                         if (producto[0] == null) {
                             break;
@@ -71,11 +71,12 @@ public class Main {
                                 + producto[2]);
                     }
                 }
-                case 2 -> { // Agregar Productos a la lista existente:
+                case 2 -> {
+                    // Agregar Productos a la lista existente:
                     int i = 0;
                     do {
                         if (productos[i][0] == null) {
-                            System.out.println("Ingrese el Nombre del Producto: ");
+                            System.out.println("Ingrese el Nombre del Producto que desea agregar: ");
                             nombre = leer.nextLine();
                             productos[i][0] = nombre;
                             System.out.println("Ingrese el Valor del Producto: ");
@@ -100,9 +101,25 @@ public class Main {
                         i++;
                     } while (i != productos.length);
                 }
-                case 4 -> System.out.println("Saliendo del menú.");
-                default -> System.out.println("Opción no Valida.");
+                case 3 -> { // Modificar Productos:
+                    System.out.println("Escriba el Nombre del Producto que desea modificar: ");
+                    nombre = leer.nextLine();
+                    for (String[] producto : productos) {
+                        if (nombre.equalsIgnoreCase(producto[0])) {
+                            System.out.println("Ingrese el nuevo Valor del Producto: ");
+                            valor = leer.nextLine();
+                            producto[1] = valor;
+                            System.out.println("Ingrese la nueva Descripcion del Producto: ");
+                            descrip = leer.nextLine();
+                            producto[2] = descrip;
+                            System.out.println("Producto Modificado con exito: ");
+                            System.out.println(
+                                    "Producto: " + nombre + " - Valor: " + valor + " - Descripcion: " + descrip);
+                        }
+                    }
+                }
             }
-        } while (op != 7);
+        } while (op != 4);
+        System.out.println("Hasta Luego");
     }
 }
