@@ -24,6 +24,7 @@ public class Principal {
          * repetición dependiendo del número ingresado.
          *
          */
+        @SuppressWarnings("unused")
         Scanner leer = new Scanner(System.in);
         // int num;
         // int n = 0;
