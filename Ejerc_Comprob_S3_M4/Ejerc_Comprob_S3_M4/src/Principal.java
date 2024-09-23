@@ -24,19 +24,32 @@ public class Principal {
          * repetición dependiendo del número ingresado.
          *
          */
-
         Scanner leer = new Scanner(System.in);
         // int num;
+        // int n = 0;
+        /*
+         * int j;
+         * int i;
+         * int I = 0;
+         * int n = 6;
+         * for (i = 1; i <= n; i++) {
+         * for (j = 0; j < I; j++) {
+         * System.out.print(i);
+         * }
+         * System.out.printf("\n");
+         * }
+         */
+
+        // int num = leer.nextInt();
         int n = 0;
-        int j;
         int i;
-        // int n = 6;
-        // int n=6;
-        for (i = 1; i <= n; i++) {
-            for (j = 0; j < Integer.SIZE; j++) {
-                System.out.print(i);
+        int j;
+        for (i = 1; i <= 6; i++) {
+            System.out.print("---");
+            for (j = 0; j < i; j++) {
+                System.out.print("*");
             }
-            System.out.printf("\n");
+            // System.out.printf("\n");
         }
 
     }
