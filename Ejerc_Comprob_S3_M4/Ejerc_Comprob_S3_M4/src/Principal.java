@@ -12,39 +12,17 @@ public class Principal {
     public static void main(String[] args) throws Exception {
         /*
          * Deberás solicitar un número al azar y mostrarás los siguientes dos
-         * patrones de dibujo:
-         * - PATRON 1:
-         * *.*.*
-         * - PATRON 2:
-         * ****
-         * * *
-         * * *
-         * ****
-         * El número debe ser capturado desde la consola, el patrón mostrará la
-         * repetición dependiendo del número ingresado.
+         * patrones de dibujo. El número debe ser capturado desde la consola,
+         * el patrón mostrará la repetición dependiendo del número ingresado.
          *
          */
         @SuppressWarnings("unused")
         Scanner leer = new Scanner(System.in);
-        // int num;
-        // int n = 0;
-        /*
-         * int j;
-         * int i;
-         * int I = 0;
-         * int n = 6;
-         * for (i = 1; i <= n; i++) {
-         * for (j = 0; j < I; j++) {
-         * System.out.print(i);
-         * }
-         * System.out.printf("\n");
-         * }
-         */
+
         System.out.println("Ingrese un numero: ");
         int num = leer.nextInt();
         int n = 0;
-        // int i;
-        // int j;
+
         System.out.print("Patrón 1:");
         System.out.print("\n");
         for (int i = 1; i <= (num - 3); i++) {
@@ -55,16 +33,15 @@ public class Principal {
         System.out.print("\n");
         for (int i = 1; i <= num; i++) {
             for (int j = 1; j <= num; j++) {
-                // Si es la primera o última fila o primera o última columna, imprime *
+                // Imprimir "*" en la primera o última fila, o primera o última columna
                 if (i == 1 || i == num || j == 1 || j == num) {
                     System.out.print("*");
                 } else {
-                    System.out.print(" "); // Espacio en el centro del cuadro
+                    System.out.print(" "); // Espacio en blanco (no imprime *)
                 }
             }
-            System.out.println(); // Salto de línea para la siguiente fila
+            System.out.println();
         }
-
         leer.close(); // Cerrar el scanner
 
     }
